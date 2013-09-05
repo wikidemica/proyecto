@@ -1,0 +1,17 @@
+wikidemica\ExpoUniversidadBundle\Entity\UniversidadMultimedia:
+    type: entity
+    table: UNIVERSIDAD-MULTIMEDIA
+    fields:
+        idUniversidad:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: id_universidad
+        idMultimedia:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: id_multimedia
+    lifecycleCallbacks: {  }

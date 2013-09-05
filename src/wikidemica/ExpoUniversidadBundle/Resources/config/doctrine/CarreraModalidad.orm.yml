@@ -1,0 +1,17 @@
+wikidemica\ExpoUniversidadBundle\Entity\CarreraModalidad:
+    type: entity
+    table: CARRERA-MODALIDAD
+    fields:
+        idCarrera:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: id_carrera
+        idModalidad:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: id_modalidad
+    lifecycleCallbacks: {  }

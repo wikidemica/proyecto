@@ -1,0 +1,18 @@
+wikidemica\ExpoUniversidadBundle\Entity\Entrevista:
+    type: entity
+    table: ENTREVISTA
+    fields:
+        idMultimedia:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: id_multimedia
+            generator:
+                strategy: IDENTITY
+        linkYoutube:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: link_youTube
+    lifecycleCallbacks: {  }

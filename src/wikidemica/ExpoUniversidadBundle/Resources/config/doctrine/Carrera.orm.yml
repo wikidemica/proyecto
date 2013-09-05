@@ -1,0 +1,36 @@
+wikidemica\ExpoUniversidadBundle\Entity\Carrera:
+    type: entity
+    table: CARRERA
+    fields:
+        idCarrera:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: id_carrera
+            generator:
+                strategy: IDENTITY
+        nombre:
+            type: string
+            length: 60
+            fixed: false
+            nullable: false
+        descripcion:
+            type: text
+            nullable: false
+        idDisciplina:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: id_disciplina
+        idTitulo:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: id_titulo
+        idInstitucion:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: id_institucion
+    lifecycleCallbacks: {  }

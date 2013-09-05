@@ -1,0 +1,29 @@
+wikidemica\ExpoUniversidadBundle\Entity\MarkerGoogleMap:
+    type: entity
+    table: MARKER_GOOGLE_MAP
+    fields:
+        idMarker:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: id_marker
+            generator:
+                strategy: IDENTITY
+        name:
+            type: string
+            length: 60
+            fixed: false
+            nullable: false
+        address:
+            type: string
+            length: 60
+            fixed: false
+            nullable: false
+        lat:
+            type: float
+            nullable: false
+        long:
+            type: float
+            nullable: false
+    lifecycleCallbacks: {  }

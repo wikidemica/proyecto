@@ -1,0 +1,21 @@
+wikidemica\ExpoUniversidadBundle\Entity\Disciplina:
+    type: entity
+    table: DISCIPLINA
+    fields:
+        idDisciplina:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: id_disciplina
+            generator:
+                strategy: IDENTITY
+        nombre:
+            type: string
+            length: 45
+            fixed: false
+            nullable: false
+        descripcion:
+            type: text
+            nullable: true
+    lifecycleCallbacks: {  }

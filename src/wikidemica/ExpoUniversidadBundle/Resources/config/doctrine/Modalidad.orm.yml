@@ -1,0 +1,18 @@
+wikidemica\ExpoUniversidadBundle\Entity\Modalidad:
+    type: entity
+    table: MODALIDAD
+    fields:
+        idModalidad:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: id_modalidad
+            generator:
+                strategy: IDENTITY
+        modalidad:
+            type: string
+            length: 45
+            fixed: false
+            nullable: false
+    lifecycleCallbacks: {  }

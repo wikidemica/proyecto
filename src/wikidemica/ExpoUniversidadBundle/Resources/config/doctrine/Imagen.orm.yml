@@ -1,0 +1,19 @@
+wikidemica\ExpoUniversidadBundle\Entity\Imagen:
+    type: entity
+    table: IMAGEN
+    fields:
+        idMultimedia:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: id_multimedia
+            generator:
+                strategy: IDENTITY
+        contenido:
+            type: blob
+            nullable: false
+        thumb:
+            type: blob
+            nullable: false
+    lifecycleCallbacks: {  }

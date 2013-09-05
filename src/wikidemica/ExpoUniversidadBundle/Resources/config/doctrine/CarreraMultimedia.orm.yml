@@ -1,0 +1,18 @@
+wikidemica\ExpoUniversidadBundle\Entity\CarreraMultimedia:
+    type: entity
+    table: CARRERA-MULTIMEDIA
+    fields:
+        idMultimedia:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: id_multimedia
+            generator:
+                strategy: IDENTITY
+        idCarrera:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: id_carrera
+    lifecycleCallbacks: {  }

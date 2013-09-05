@@ -1,0 +1,4 @@
+expo_universidad:
+    resource: "@ExpoUniversidadBundle/Resources/config/routing.yml"
+    prefix:   /
+

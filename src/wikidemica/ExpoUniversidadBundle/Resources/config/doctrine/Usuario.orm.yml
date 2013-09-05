@@ -1,0 +1,35 @@
+wikidemica\ExpoUniversidadBundle\Entity\Usuario:
+    type: entity
+    table: USUARIO
+    fields:
+        idUsuario:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: id_usuario
+            generator:
+                strategy: IDENTITY
+        nombreUsuario:
+            type: string
+            length: 60
+            fixed: false
+            nullable: false
+            column: nombre_usuario
+        passwordUsuario:
+            type: string
+            length: 60
+            fixed: false
+            nullable: false
+            column: password_usuario
+        email:
+            type: string
+            length: 60
+            fixed: false
+            nullable: false
+        idCiudad:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: id_ciudad
+    lifecycleCallbacks: {  }

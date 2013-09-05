@@ -1,0 +1,18 @@
+wikidemica\ExpoUniversidadBundle\Entity\Continente:
+    type: entity
+    table: CONTINENTE
+    fields:
+        idContinente:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: id_continente
+            generator:
+                strategy: IDENTITY
+        nombre:
+            type: string
+            length: 60
+            fixed: false
+            nullable: false
+    lifecycleCallbacks: {  }

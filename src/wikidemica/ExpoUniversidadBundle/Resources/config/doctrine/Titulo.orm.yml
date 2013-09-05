@@ -1,0 +1,21 @@
+wikidemica\ExpoUniversidadBundle\Entity\Titulo:
+    type: entity
+    table: TITULO
+    fields:
+        idTitulo:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: id_titulo
+            generator:
+                strategy: IDENTITY
+        titulo:
+            type: string
+            length: 45
+            fixed: false
+            nullable: false
+        descripcion:
+            type: text
+            nullable: false
+    lifecycleCallbacks: {  }
